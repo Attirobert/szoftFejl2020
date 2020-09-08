@@ -1,0 +1,7 @@
+D:\SuliSoftFejl\2020.09.08\2020.09.08\obj\Debug\2020.09.08.csprojAssemblyReference.cache
+D:\SuliSoftFejl\2020.09.08\2020.09.08\obj\Debug\2020.09.08.csproj.CoreCompileInputs.cache
+D:\SuliSoftFejl\2020.09.08\2020.09.08\bin\Debug\2020.09.08.exe.config
+D:\SuliSoftFejl\2020.09.08\2020.09.08\bin\Debug\2020.09.08.exe
+D:\SuliSoftFejl\2020.09.08\2020.09.08\bin\Debug\2020.09.08.pdb
+D:\SuliSoftFejl\2020.09.08\2020.09.08\obj\Debug\2020.09.08.exe
+D:\SuliSoftFejl\2020.09.08\2020.09.08\obj\Debug\2020.09.08.pdb
