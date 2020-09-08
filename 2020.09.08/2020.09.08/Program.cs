@@ -24,8 +24,8 @@ namespace _2020._09._08
 
                     Console.Write("műveleti jel: ");
                     char op = Convert.ToChar(Console.ReadLine());
+                    
                     double eredmeny = 0;
-
                     string nulla = "";
                     Console.WriteLine(nulla=(szam2==0&&op=='/')?"ne osszál nullával. Nem lehet nullával osztani!\n":"");
                     if (nulla=="")
