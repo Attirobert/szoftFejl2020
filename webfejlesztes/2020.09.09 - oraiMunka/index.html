@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Az első oldalam</title>
+    <meta name="Szerző" content="Szántó Benjámin">
+    <meta name="description" content="Elkezdem tanulni a html-t">
+    <meta name="keywords" content="tanulás, okttatás, webtanfolyam">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        <a id="oldalTeteje"></a>
+        <h1>h1 Ez egy weboldal</h1>
+        <h2 class="egy">h2 Ez egy weboldal</h2>
+        <h3>h3 Ez egy weboldal</h3>
+        <h4>h4 Ez egy weboldal</h4>
+        <h6>h6 Ez egy weboldal</h6>
+        <ul>
+            <li>egy</li>
+            <li>egy</li>
+            <li>egy</li>
+            <li>egy</li>
+        </ul>
+
+        <ol start="2" title="qq22" reversed>
+            <li>kettő2</li>
+            <li>kettő</li>
+            <li value="34">kettő</li>
+            <li>kettő</li>
+        </ol>
+
+        <dl>
+            <dt>Html</dt>
+            <dd>ez a html leirása</dd>
+            <dd>meg ez is</dd>
+        </dl>
+
+        <img title="elvont"
+            src="https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg?q=85&w=1340"
+            width="500" alt="kép">
+        <div>
+            <p class="egy">Lorem &deg;C ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit eligendi aliquid
+                laborum sed corrupti vitae repellat optio iure porro ducimus ipsum, rem delectus sit sint velit obcaecati
+                doloribus corporis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit eligendi aliquid laborum sed
+                corrupti vitae repellat optio iure porro ducimus ipsum, rem delectus sit sint velit obcaecati doloribus
+                corporis.</p>
+            <p id="egyedi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit eligendi aliquid
+                laborum sed corrupti vitae repellat optio iure porro ducimus ipsum, rem delectus sit sint velit obcaecati
+                doloribus corporis.</p>
+        </div>
+
+        <table>
+            <caption>Hello</caption>
+            <tr>
+                <th>egy</th><th>ketto</th><th>harom</th>
+            </tr>
+            <tr>
+                <td>1</td><th>2</th><th>3</th>
+            </tr>
+            <tr>
+                <td>1</td><th>2</th><th>3</th>
+            </tr>
+        </table>
+
+        <table>
+            <caption>Ez egy tablazat</caption>
+            <tr>
+                <td>egy</td><td>ketto</td><td rowspan="2">ketto</td>
+            </tr>
+            <tr>
+                <td colspan="2">haromszoros</td>
+            </tr>
+            <tr>
+                <td>harom</td><th>negy</th><td>ketto</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>statisztika</caption>
+            <tr>
+                <th>opera</th><td>0,9%</td><td><ol>
+                        <li>333</li>
+                        <li>333</li>
+                        <li>333</li></ol></td>
+            </tr>
+            <tr>
+                <th>safari</th><td>61,9%</td><td><ul>
+                        <li>444</li>
+                        <li>444</li>
+                        <li>444</li></ul></td>
+            </tr>
+            <tr>
+                <th>EDGE</th><td>33,4%</td><td>
+                    <table>
+                        <caption>ez egy beágyazott táblázat</caption>
+                        <tr>
+                            <th>első</th><th>masodik</th><th>negyedik</th>
+                        </tr>
+                        <tr>
+                            <td align="center">5</td><td align="center">6</td> <td align="center">7</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                A böngészők statisztikálya 2020
+            </caption>
+            <colgroup>
+                <col>
+            </colgroup> <!-- mi a fasz -->
+            <thead>
+                <tr>
+                    <th>hónap</th><th>június</th><th>július</th><th>augusztus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Chrome 30 és újjabbak</th><td>54%</td>td>54%</td><td>54%</td>
+                </tr>
+                <tr>
+                    <th>Chrome 30 és újjabbak</th><td>54%</td><td>54%</td><td>54%</td>
+                </tr>
+                <tr>
+                    <th>Chrome 30 és újjabbak</th><td>54%</td><td>54%</td>qa<td>54%</td>
+                </tr>
+                <tr>
+                    <th>ie</th><td>54%</td><td>54%</td><td>54%</td>
+                </tr>
+                <tr>
+                    <th>Chrome 30 és újjabbak</th><td>54%</td><td>54%</td><td>54%</td>
+                </tr>
+                <tr>
+                    <th>Chrome 30 és újjabbak</th><td>54%</td><td>54%</td><td>54%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Ebből az opera minik kb 0,56%</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>A rozsák <img
+                src="https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg?q=85&w=1340"
+                alt="rozsabokor" height="200" title="rozsak"> azok egy vadivirágok</p>
+        
+        <iframe width="962" height="541" src="https://www.youtube.com/embed/POlUVXZYc-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video height="300" src="/Adobe XD 2020-08-23 20-24-26.mp4" preload="auto" controls ></video>
+        <audio src="/Feeling Good Mix 3 - Daniela Andrade, Marie Plassard [2020].mp3" controls></audio>
+        <iframe src="https://www.index.hu" frameborder="5" ></iframe>
+
+        <p>A <dfn title="a&nbsp;föld&nbsp;és&nbsp;minden&nbsp;ami&nbsp;körülötte&nbsp;van">világ</dfn> egyik legismertebb <abbr title="idezet">id</abbr> a Hamlettből a <q>lenni vagy nem lenni, ez itt a kérdés</q></p>
+        <p>ekkorát ugrott <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis, commodi et id quisquam repudi<wbr>andae aliquid libero amet! Commodi repellendus sit repellat laborum, repudiandae obcaecati ad sequi laudantium magnam vitae.
+            <meter id="elorehaladas" min="0" max="20" value="5" title="15 méter"></meter>
+        </p>
+
+        <p><kbd>CTR</kbd>+<Kbd>C</Kbd></p>
+        <p><a  href="#egyedi">gbgy</a></p>
+        <a href="mailto:emailcim@gmail.com">Email</a>
+    </main>
+    <footer>
+        <a href="#oldalTeteje">Ugrás az oldal tetejére</a>
+        
+    </footer>
+</body>
+
+</html>
+
+<!-- a számítógépes játékok története érettségi -->
