@@ -1,0 +1,32 @@
+tervvezéret modell- rend fenttartás, itt ha teljesen kész a projekt adjá át
+agilis- változáshoz történő alkalmazkodás, kevésbé minőségi, folyamatopsan publikáják a vevőnek, mimndedn apró váéltozáskor
+formális- minőségi, a két módszer keveréke. 
+álatában vegyítve jelennek meg
+
+agilis módszerekgyors alkalmazás fejlesztés a célja
+a változás minden lépésben beépíthető
+kis csapatok végzik el(3-4)
+minél hamarabb publikáljunk(3hét)
+ügyféllel való szoros kapcsolattartás
+dokumenmtáció hiánya megnehezíthető a későbbi fejlesztést
+
+
+
+program három rétege
+adattár(backend)
+üzleti logika(pl számla áfakzezelés)
+felhasználói felület(frontend)
+
+
+scrum módszer
+agiis szoftverefejlesztési technológia
+1. tervezés
+2. demók
+3. finish
+ferlmérés fejlesztés áttekintés kiértzékelés 
+
+
+kanban módszer
+látszik a haladás és a feladatok
+
+
