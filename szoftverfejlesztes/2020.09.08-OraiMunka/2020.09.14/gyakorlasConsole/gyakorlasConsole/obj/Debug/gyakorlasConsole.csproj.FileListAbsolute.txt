@@ -1,0 +1,7 @@
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\bin\Debug\gyakorlasConsole.exe.config
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\bin\Debug\gyakorlasConsole.exe
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\bin\Debug\gyakorlasConsole.pdb
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\obj\Debug\gyakorlasConsole.csprojAssemblyReference.cache
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\obj\Debug\gyakorlasConsole.csproj.CoreCompileInputs.cache
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\obj\Debug\gyakorlasConsole.exe
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.08-OraiMunka\2020.09.14\gyakorlasConsole\gyakorlasConsole\obj\Debug\gyakorlasConsole.pdb
