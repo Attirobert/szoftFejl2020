@@ -1,0 +1,17 @@
+
+Regex pattern = new Regex(@"^[+-/*]");
+
+@ specialis karakterek esteén meg kella adni ezt
+muvelet: beolvasott operator
+if (!pattern.IsMatch(muvelet.Substring(0,1)))
+
+^a szöveg elejét jelöli, illetve ami nem fordulhat elő
+$a szöveg végét jelöli
+- tartományok
+i nem különbözteti  meg a kis és nagybetűt
+
+ciklusba ne deklaráljunk változót, mindig lefoglalja a tarhelyet a memóriából
+
+-10 +35
+2dimenziós tömb
+12*30
