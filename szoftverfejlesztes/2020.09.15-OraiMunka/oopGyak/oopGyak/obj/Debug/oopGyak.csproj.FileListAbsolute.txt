@@ -1,0 +1,7 @@
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\obj\Debug\oopGyak.csprojAssemblyReference.cache
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\obj\Debug\oopGyak.csproj.CoreCompileInputs.cache
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\bin\Debug\oopGyak.exe.config
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\bin\Debug\oopGyak.exe
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\bin\Debug\oopGyak.pdb
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\obj\Debug\oopGyak.exe
+D:\szoftFejl2020\szoftverfejlesztes\2020.09.15-OraiMunka\oopGyak\oopGyak\obj\Debug\oopGyak.pdb
