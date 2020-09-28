@@ -27,7 +27,6 @@ namespace oopGyak
                 this.fajta = fajta;
             }
 
-
             public void ugat(int ugatasSzama) { for (int i = 0; i < ugatasSzama; i++) Console.WriteLine("Wau");}
 
             public void bemut(){
@@ -42,19 +41,9 @@ namespace oopGyak
                 private string lakcim { get; set; }
                 private int kor { get; set; }
 
-                public Gazda(string nev)
-                {
-                    this.nev = nev;
-                }
-                public void koszon()
-                {
-                    Console.WriteLine("Szia én vagyok a {0} gazda", this.nev);
-                }
-
-                public string gazdBem()
-                {
-                    return this.nev;
-                }
+                public Gazda(string nev){this.nev = nev; }
+                public void koszon(){Console.WriteLine("Szia én vagyok a {0} gazda", this.nev);}
+                public string gazdBem(){return this.nev;}
             }
         }
 
@@ -79,8 +68,6 @@ namespace oopGyak
             
             Kutya bogancs = new Kutya("bogancs","komondor");
             bogancs.bemut();
-
-            
 
             Console.ReadKey();
         }
