@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbxPiros = new System.Windows.Forms.CheckBox();
-            this.cbxKek = new System.Windows.Forms.CheckBox();
-            this.cbxZold = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbxFelkover = new System.Windows.Forms.CheckBox();
             this.cbxAlahuzott = new System.Windows.Forms.CheckBox();
             this.cbxDolt = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbCs = new System.Windows.Forms.RadioButton();
+            this.rbTnr = new System.Windows.Forms.RadioButton();
+            this.rbArial = new System.Windows.Forms.RadioButton();
             this.cbxValaszt = new System.Windows.Forms.ComboBox();
             this.nudMeret = new System.Windows.Forms.NumericUpDown();
             this.txbSzoveg = new System.Windows.Forms.TextBox();
@@ -44,10 +44,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.rbArial = new System.Windows.Forms.RadioButton();
-            this.rbTnr = new System.Windows.Forms.RadioButton();
-            this.rbCs = new System.Windows.Forms.RadioButton();
             this.rtbSzoveg = new System.Windows.Forms.RichTextBox();
+            this.rbPiros = new System.Windows.Forms.RadioButton();
+            this.rbKek = new System.Windows.Forms.RadioButton();
+            this.rbZold = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,45 +56,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbxZold);
-            this.groupBox1.Controls.Add(this.cbxKek);
-            this.groupBox1.Controls.Add(this.cbxPiros);
+            this.groupBox1.Controls.Add(this.rbZold);
+            this.groupBox1.Controls.Add(this.rbKek);
+            this.groupBox1.Controls.Add(this.rbPiros);
             this.groupBox1.Location = new System.Drawing.Point(21, 178);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(182, 234);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Szín";
-            // 
-            // cbxPiros
-            // 
-            this.cbxPiros.AutoSize = true;
-            this.cbxPiros.Location = new System.Drawing.Point(53, 63);
-            this.cbxPiros.Name = "cbxPiros";
-            this.cbxPiros.Size = new System.Drawing.Size(48, 17);
-            this.cbxPiros.TabIndex = 0;
-            this.cbxPiros.Text = "piros";
-            this.cbxPiros.UseVisualStyleBackColor = true;
-            // 
-            // cbxKek
-            // 
-            this.cbxKek.AutoSize = true;
-            this.cbxKek.Location = new System.Drawing.Point(53, 110);
-            this.cbxKek.Name = "cbxKek";
-            this.cbxKek.Size = new System.Drawing.Size(44, 17);
-            this.cbxKek.TabIndex = 1;
-            this.cbxKek.Text = "kék";
-            this.cbxKek.UseVisualStyleBackColor = true;
-            // 
-            // cbxZold
-            // 
-            this.cbxZold.AutoSize = true;
-            this.cbxZold.Location = new System.Drawing.Point(53, 167);
-            this.cbxZold.Name = "cbxZold";
-            this.cbxZold.Size = new System.Drawing.Size(45, 17);
-            this.cbxZold.TabIndex = 2;
-            this.cbxZold.Text = "zöld";
-            this.cbxZold.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -150,6 +120,39 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Font";
             // 
+            // rbCs
+            // 
+            this.rbCs.AutoSize = true;
+            this.rbCs.Location = new System.Drawing.Point(53, 167);
+            this.rbCs.Name = "rbCs";
+            this.rbCs.Size = new System.Drawing.Size(81, 17);
+            this.rbCs.TabIndex = 3;
+            this.rbCs.TabStop = true;
+            this.rbCs.Text = "Comic Sans";
+            this.rbCs.UseVisualStyleBackColor = true;
+            // 
+            // rbTnr
+            // 
+            this.rbTnr.AutoSize = true;
+            this.rbTnr.Location = new System.Drawing.Point(53, 103);
+            this.rbTnr.Name = "rbTnr";
+            this.rbTnr.Size = new System.Drawing.Size(115, 17);
+            this.rbTnr.TabIndex = 3;
+            this.rbTnr.TabStop = true;
+            this.rbTnr.Text = "Times New Roman";
+            this.rbTnr.UseVisualStyleBackColor = true;
+            // 
+            // rbArial
+            // 
+            this.rbArial.AutoSize = true;
+            this.rbArial.Location = new System.Drawing.Point(53, 43);
+            this.rbArial.Name = "rbArial";
+            this.rbArial.Size = new System.Drawing.Size(45, 17);
+            this.rbArial.TabIndex = 3;
+            this.rbArial.TabStop = true;
+            this.rbArial.Text = "Arial";
+            this.rbArial.UseVisualStyleBackColor = true;
+            // 
             // cbxValaszt
             // 
             this.cbxValaszt.FormattingEnabled = true;
@@ -157,6 +160,7 @@
             this.cbxValaszt.Name = "cbxValaszt";
             this.cbxValaszt.Size = new System.Drawing.Size(121, 21);
             this.cbxValaszt.TabIndex = 1;
+            this.cbxValaszt.SelectedValueChanged += new System.EventHandler(this.cbxValaszt_SelectedValueChanged);
             // 
             // nudMeret
             // 
@@ -208,39 +212,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Font méret";
             // 
-            // rbArial
-            // 
-            this.rbArial.AutoSize = true;
-            this.rbArial.Location = new System.Drawing.Point(53, 43);
-            this.rbArial.Name = "rbArial";
-            this.rbArial.Size = new System.Drawing.Size(45, 17);
-            this.rbArial.TabIndex = 3;
-            this.rbArial.TabStop = true;
-            this.rbArial.Text = "Arial";
-            this.rbArial.UseVisualStyleBackColor = true;
-            // 
-            // rbTnr
-            // 
-            this.rbTnr.AutoSize = true;
-            this.rbTnr.Location = new System.Drawing.Point(53, 103);
-            this.rbTnr.Name = "rbTnr";
-            this.rbTnr.Size = new System.Drawing.Size(115, 17);
-            this.rbTnr.TabIndex = 3;
-            this.rbTnr.TabStop = true;
-            this.rbTnr.Text = "Times New Roman";
-            this.rbTnr.UseVisualStyleBackColor = true;
-            // 
-            // rbCs
-            // 
-            this.rbCs.AutoSize = true;
-            this.rbCs.Location = new System.Drawing.Point(53, 167);
-            this.rbCs.Name = "rbCs";
-            this.rbCs.Size = new System.Drawing.Size(81, 17);
-            this.rbCs.TabIndex = 3;
-            this.rbCs.TabStop = true;
-            this.rbCs.Text = "Comic Sans";
-            this.rbCs.UseVisualStyleBackColor = true;
-            // 
             // rtbSzoveg
             // 
             this.rtbSzoveg.Location = new System.Drawing.Point(294, 13);
@@ -248,6 +219,39 @@
             this.rtbSzoveg.Size = new System.Drawing.Size(474, 130);
             this.rtbSzoveg.TabIndex = 7;
             this.rtbSzoveg.Text = "";
+            // 
+            // rbPiros
+            // 
+            this.rbPiros.AutoSize = true;
+            this.rbPiros.Location = new System.Drawing.Point(36, 63);
+            this.rbPiros.Name = "rbPiros";
+            this.rbPiros.Size = new System.Drawing.Size(47, 17);
+            this.rbPiros.TabIndex = 3;
+            this.rbPiros.TabStop = true;
+            this.rbPiros.Text = "piros";
+            this.rbPiros.UseVisualStyleBackColor = true;
+            // 
+            // rbKek
+            // 
+            this.rbKek.AutoSize = true;
+            this.rbKek.Location = new System.Drawing.Point(36, 110);
+            this.rbKek.Name = "rbKek";
+            this.rbKek.Size = new System.Drawing.Size(43, 17);
+            this.rbKek.TabIndex = 3;
+            this.rbKek.TabStop = true;
+            this.rbKek.Text = "kek";
+            this.rbKek.UseVisualStyleBackColor = true;
+            // 
+            // rbZold
+            // 
+            this.rbZold.AutoSize = true;
+            this.rbZold.Location = new System.Drawing.Point(36, 167);
+            this.rbZold.Name = "rbZold";
+            this.rbZold.Size = new System.Drawing.Size(44, 17);
+            this.rbZold.TabIndex = 4;
+            this.rbZold.TabStop = true;
+            this.rbZold.Text = "zold";
+            this.rbZold.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -267,6 +271,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -282,9 +287,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox cbxZold;
-        private System.Windows.Forms.CheckBox cbxKek;
-        private System.Windows.Forms.CheckBox cbxPiros;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox cbxFelkover;
         private System.Windows.Forms.CheckBox cbxAlahuzott;
@@ -301,6 +303,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox rtbSzoveg;
+        private System.Windows.Forms.RadioButton rbZold;
+        private System.Windows.Forms.RadioButton rbKek;
+        private System.Windows.Forms.RadioButton rbPiros;
     }
 }
 
