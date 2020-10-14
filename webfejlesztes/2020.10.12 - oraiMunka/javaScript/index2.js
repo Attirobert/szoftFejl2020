@@ -3,5 +3,7 @@ function muvelet(szoveg,szam){
 }
 
 function henger(r,m){
+    alert(`alap adatok: ${r} ${m}`)
     let c =Math.pow(parseFloat(r),2)*Math.PI*parseFloat(m);
+    alert(`henger térfogata =${c}`);
 }
