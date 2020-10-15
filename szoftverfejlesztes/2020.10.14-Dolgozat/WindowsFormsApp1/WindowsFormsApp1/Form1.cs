@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             int n = 0;
+            //Kérjen be a felhasználótól egy "n" természetes számot ahol n eleme a[5, 15] intervallumnak. --> Ennek ellenőrzése:
             if (!(int.TryParse(txbInput.Text,out n) && n>5 && n<15)) MessageBox.Show("Nem megfelelő bemenet", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
