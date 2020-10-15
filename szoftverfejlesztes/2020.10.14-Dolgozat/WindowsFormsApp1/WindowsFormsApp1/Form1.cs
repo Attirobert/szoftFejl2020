@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             int n = 0;
-            if (!(int.TryParse(txbInput.Text,out n) && n>2 && n<15)) MessageBox.Show("Nem megfelelő bemenet", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (!(int.TryParse(txbInput.Text,out n) && n>5 && n<15)) MessageBox.Show("Nem megfelelő bemenet", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 int[,] matrix1 = matrixFeltolt(n, n);
@@ -52,36 +52,19 @@ namespace WindowsFormsApp1
         private int utso(int[,] matrix1)
         {
             int szam = 0;
-            int index = 0;
-            int hossza = matrix1.GetLength(0);
             int szamlalo = 0;
-            int emelo = 0;
             for (int i = 0; i < matrix1.GetLength(0); i++)
             {
-                index = 0;
-                szamlalo=0;
-                emelo++;
-                for (int j = 0; j < matrix1.GetLength(1); j++)
+                szamlalo = 0;
+                for (int j = i+1; j < (matrix1.GetLength(1)-i)-1; j++)
                 {
-                    
-                    if (index!=(i+1) )
-                    {
-                        index=(matrix1.GetLength(0)-1) - (j + emelo);
-                        szam+=matrix1[i,index];
-                        szamlalo++;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                    if (i== (matrix1.GetLength(0)/2)-1)
-                    {
-                        return szam;
-
-                    }
-                    ;
+                    szam += matrix1[i, j];
+                    szamlalo++;
                 }
-                
+                if (szamlalo>0 && szamlalo<3)
+                {
+                    return szam;
+                }
             }
             return szam;
         }
