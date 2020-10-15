@@ -30,10 +30,8 @@ namespace WindowsFormsApp1
                 int[,] matrix2 = matrixFeltolt(n, n);
 
                 //Jelenítse meg egy-egy ablakban a két mátrixot.
-                Form3 f3 = new Form3(matrix2);
-                f3.Show();
-                Form f2 = new Form2(matrix1);
-                f2.Show();
+                new Form3(matrix2).Show();
+                new Form2(matrix1).Show();
 
                 //Számolja ki  
                 //a.) a két mátrix skaláris szorzatát.
