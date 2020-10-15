@@ -24,28 +24,33 @@ namespace WindowsFormsApp1
             if (!(int.TryParse(txbInput.Text,out n) && n>5 && n<15)) MessageBox.Show("Nem megfelelő bemenet", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
+                //Generáljon két n x n elemű mátrixot, amelynek elemei véletlen értékű egész számok(legyen benne negatív szám is !).
                 int[,] matrix1 = matrixFeltolt(n, n);
                 int[,] matrix2 = matrixFeltolt(n, n);
 
-                
+                //Jelenítse meg egy-egy ablakban a két mátrixot.
                 Form3 f3 = new Form3(matrix2);
                 f3.Show();
                 Form f2 = new Form2(matrix1);
                 f2.Show();
 
-
+                //Számolja ki  
+                //a.) a két mátrix skaláris szorzatát.
                 lbSkalarisSzorzat.Text = skalarrisSzorzat(matrix1, matrix2).ToString();
-                lbSkalarisSzorzat.ForeColor =(lbSkalarisSzorzat.Text[0] == '-')? Color.Red: Color.Blue;
-                
+                //b.) a két mátrix fordított skaláris szorzatát.
                 lbForditottSkalarisSzorzat.Text = ForditottSkalarisSzorzat(matrix1, matrix2).ToString();
-                lbForditottSkalarisSzorzat.ForeColor = (lbForditottSkalarisSzorzat.Text[0] == '-') ? Color.Red : Color.Blue;
-
-                lbAtloOsszeg.Text = (atkloOsszeg(matrix1)-atkloOsszeg(matrix2)).ToString(); 
-                lbAtloOsszeg.ForeColor = (lbAtloOsszeg.Text[0] == '-') ? Color.Red : Color.Blue;
-                
+                //c.) a két mátrix átlóösszegét és vonja ki egymásból.
+                lbAtloOsszeg.Text = (atkloOsszeg(matrix1)-atkloOsszeg(matrix2)).ToString();
+                //d.) az első mátrix két átlója feletti terület számainak összegét.
                 lbUtoklsoFeladat.Text = utso(matrix1).ToString();
-                lbUtoklsoFeladat.ForeColor = (lbUtoklsoFeladat.Text[0] == '-') ? Color.Red : Color.Blue;
 
+                /*Az eredményeket írja ki és formázza az alábbi módon:
+                - ha az eredmény nagyobb mint 0, akkor a  karakter színe kék;
+                - egyébként piros. */
+                lbSkalarisSzorzat.ForeColor =(lbSkalarisSzorzat.Text[0] == '-')? Color.Red: Color.Blue;
+                lbForditottSkalarisSzorzat.ForeColor = (lbForditottSkalarisSzorzat.Text[0] == '-') ? Color.Red : Color.Blue;
+                lbAtloOsszeg.ForeColor = (lbAtloOsszeg.Text[0] == '-') ? Color.Red : Color.Blue;
+                lbUtoklsoFeladat.ForeColor = (lbUtoklsoFeladat.Text[0] == '-') ? Color.Red : Color.Blue;
             }
         }
 
@@ -115,9 +120,13 @@ namespace WindowsFormsApp1
         private int[,] matrixFeltolt(int n1, int n2)
         {
             int[,] tempMatrix = new int[n1, n2];
-            for (int i = 0; i < tempMatrix.GetLength(0); i++) 
-                for (int j = 0; j < tempMatrix.GetLength(1); j++) 
+            for (int i = 0; i < tempMatrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < tempMatrix.GetLength(1); j++)
+                {
                     tempMatrix[i, j] = r.Next(-20, 21);
+                }
+            }
             return tempMatrix;
         }
     }
