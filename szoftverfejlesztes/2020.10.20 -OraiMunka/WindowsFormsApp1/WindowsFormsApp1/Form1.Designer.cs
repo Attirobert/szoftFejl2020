@@ -76,7 +76,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "hova";
+            this.label3.Text = "hová";
             // 
             // label4
             // 
@@ -103,7 +103,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Szolgaltatás";
+            this.label6.Text = "Szolgáltatás";
             // 
             // label7
             // 
@@ -144,6 +144,7 @@
             // 
             // clbSzolgaltatas
             // 
+            this.clbSzolgaltatas.CheckOnClick = true;
             this.clbSzolgaltatas.FormattingEnabled = true;
             this.clbSzolgaltatas.Location = new System.Drawing.Point(404, 108);
             this.clbSzolgaltatas.Name = "clbSzolgaltatas";
