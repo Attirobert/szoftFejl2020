@@ -19,7 +19,6 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            
 
             //Utazási célok:
             celList.Add(new UtazasiCel("Budapest", 1500));
@@ -51,8 +50,7 @@ namespace WindowsFormsApp1
             }
 
             //kezdőértékek beállítása
-            cbxCel.SelectedIndex = 0;
-            cbxKedvezmeny.SelectedIndex = 0;
+            Reset();
         }
 
        
@@ -72,22 +70,28 @@ namespace WindowsFormsApp1
             for (int i = 0; i < clbSzolgaltatas.CheckedItems.Count; i++)
             {
                 szam += SzolgaltatasList[clbSzolgaltatas.Items.IndexOf(clbSzolgaltatas.CheckedItems[i])].ar;
-               
             }
-            ;
             return szam;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            while (clbSzolgaltatas.CheckedItems.Count!=0)
+            Reset();
+        }
+
+        private void Reset()
+        {
+            //Szolgaltatas
+            for (int i = 0; i < clbSzolgaltatas.Items.Count; i++)
             {
-                int index = clbSzolgaltatas.Items.IndexOf(clbSzolgaltatas.CheckedItems[i]);
-                clbSzolgaltatas.SetItemCheckState(index, CheckState.Unchecked);
-                i++;
+                clbSzolgaltatas.SetItemCheckState(i, CheckState.Unchecked);
             }
 
+            //Utazasi Cél
+            cbxCel.SelectedIndex = 0;
+
+            //kedvezmeny
+            cbxKedvezmeny.SelectedIndex = 0;
         }
     }
 }
