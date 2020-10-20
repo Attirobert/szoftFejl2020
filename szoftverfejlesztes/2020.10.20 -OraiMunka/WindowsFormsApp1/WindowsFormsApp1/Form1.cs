@@ -53,8 +53,9 @@ namespace WindowsFormsApp1
             Reset();
         }
 
-       
-
+        /// <summary>
+        /// Kiszámolja az eredményt
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             int ar =celList[cbxCel.SelectedIndex].ar;
@@ -64,6 +65,17 @@ namespace WindowsFormsApp1
             lbEredmeny.Text = $"{((ar - ((ar / 100) * kedveznmeny)) + szolgaltatas)} Ft";
         }
 
+        /// <summary>
+        /// Visszaállítja a kezdőértékeket
+        /// </summary>
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        /// <summary>
+        /// A checkedelt elemeket összeadja, az összeggel pedig vissza tér
+        /// </summary>
         private int szolgaltatasOsszeadasa()
         {
             int szam = 0;
@@ -74,11 +86,9 @@ namespace WindowsFormsApp1
             return szam;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Reset();
-        }
-
+        /// <summary>
+        /// vissza állítja a kezdőértékeket
+        /// </summary>
         private void Reset()
         {
             //Szolgaltatas
