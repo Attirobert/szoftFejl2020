@@ -49,13 +49,11 @@ namespace Matrix
         {
             dataGridView1.Rows.Clear();
             dataGridView1.ColumnCount= 3;
-            dataGridView1.Columns[0].Width = 30;
-            dataGridView1.Columns[1].Width = 30;
-            dataGridView1.Columns[2].Width = 30;
+            dataGridView1.Columns[0].Width = dataGridView1.Columns[1].Width = dataGridView1.Columns[2].Width = 30;
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 string[] row = new string[3];
-                for (int j = 0; j < matrix.GetLength(1); j++) row[j] = matrix[i, j].ToString();
+                for (int j = 0; j < matrix.GetLength(1); j++) row[j] = matrix[i, j];
                 dataGridView1.Rows.Add(row);
             }
         }
