@@ -53,7 +53,7 @@ namespace Matrix
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 string[] row = new string[3];
-                for (int j = 0; j < matrix.GetLength(1); j++) row[j] = matrix[i, j];
+                for (int j = 0; j < matrix.GetLength(1); j++) row[j] = matrix[i, j].ToString();
                 dataGridView1.Rows.Add(row);
             }
         }
