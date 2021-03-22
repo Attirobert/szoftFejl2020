@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="OK" name="okBUtton" id="okButtton" />
+    <table id="myTable" align=center cellpadding=4 width=240>
+        <tr>
+            <th> hatvány </th>
+            <th> érték </th>
+        <tr >
+
+    </table>
+    <div id="div">
+
+    </div>
+    <script>
+        /* 1
+        var showHero = function(hero ="Superman", address={planeta: "kripton"}){
+             return hero +"vagypok a "+address.planeta;
+        }
+        alert(showHero());
+        alert(showHero("Pókembner",{planet:'Hold'} ));
+        alert(showHero(undefined));*/
+
+
+        /* változó paraméterlista
+        var showHero = function(name, ...adatok){
+            return name +"super erősségei: "+ adatok.join(", ");
+        }
+        alert(showHero("Superman", "erős","mérges", "repül"));*/
+
+        /*
+        document.getElementById("okButtton")
+        .addEventListener("click", ()=>alert("Kattints a gombra!"),
+        false);*/
+
+        //önkioldó függvény
+        /*var add =(() => {
+            var szamalo =0;
+            return ()=>{
+                return ++szamalo;
+            }
+        })();
+
+        alert(add());
+        alert(add());
+        alert(add());*/
+        var table = document.getElementById("myTable");
+        var node = document.createElement("tr");      
+        var node2 = document.createElement("td");   
+
+        
+        for (i = 0; i <= 30;)
+            tabe("</tr><td> 2<sup>" + i + "</sup> </td> <td>" + Math.pow(2, i++) + "</td><tr >");
+        document.getElementById("div").appendChild("<h1>Hello</h1>");
+    </script>
+</body>
+
+</html>

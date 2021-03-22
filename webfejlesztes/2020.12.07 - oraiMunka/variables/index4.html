@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function outerFunction(){
+            var simplevariable=1;
+            console.log(simplevariable);
+
+            function innerFunction1(){
+                var simplevariable=2;
+                console.log(simplevariable);
+
+                function innerFunction2(){
+                    var simplevariable=3;
+                    console.log(simplevariable);
+                }
+
+                innerFunction2();
+            }
+
+            innerFunction1();
+        }
+
+        outerFunction();
+    </script>
+</body>
+</html>

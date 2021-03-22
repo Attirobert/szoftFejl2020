@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let simpleVariable="simple"; //van hoisting de nincs undefined értékkel indicializálva,mint a var
+        console.log(simpleVariable);
+
+        var simpleVariable2="simple2";//minden var-ral létrehozott változó hozzá lesz kötve a window globális objwktumhoz
+        console.log(window.simpleVariable2);
+    </script>
+</body>
+</html>
