@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        noNameError= new Error("A felhasználó neve nem lehet üres");
+        noNameError.name="noNameError";
+        badNameError= new Error("Rossz nevet adpott meg");
+        badNameError.name="badNameError";
+
+        function formValidate(){
+            checkName();
+        }
+        function checkName(){
+            try {
+                if (document.getElementById("username").value =="") throw noNameError;
+                if (document.getElementById("username").value !="Nagy") throw badNameError;
+            } catch (e) {
+                alert(e.name+ ": "+e.message);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="formValidate()">
+        kérem a felhasználó neveét:
+        <input type="text" name="username" id="username"><br>
+        <input type="submit" value="OK" name="submit">
+    </form>
+</body>
+</html>

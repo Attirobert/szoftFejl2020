@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/index2.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <input type="button" value="kattints rám!" 
+        onclick="alert('Hello')" onmouseover="alert('kattints!')">
+        
+    </form>
+    <script>
+        {
+            let a = 33;
+            let b = 10;
+            let c = "teszt";
+            document.write("alapadatok | aritmetrikai operatorok <br><br>")
+            muvelet("a=", a);
+            muvelet("b=", b);
+            muvelet("c=", c);
+            muvelet("a+b=", a + b);
+            muvelet("a-b=", a - b);
+            muvelet("a*b=", a * b);
+            muvelet("a/b=", a / b);
+            muvelet("c+(b+a)=", c + (b + a));
+            muvelet("c+b+a=", c + b + a);
+            muvelet("--b=", --b);
+            muvelet("++b=", ++b);
+            muvelet("b++=", b++);
+            muvelet("a%b=", a % b);
+            muvelet("a**b=", a ** b);
+        }
+
+        {
+            let a = 33;
+            let b = 10;
+            let c = 10.0;
+            let d = "10";
+            document.write("<br>alapadatok | logikai operatorok <br><br>")
+
+            muvelet("a=", a);
+            muvelet("b=", b);
+            muvelet("c=", c);
+            muvelet("d=", d);
+
+            document.writeln("<br>");
+
+            muvelet(" (a== b)= ", a == b);
+            muvelet(" (c== b)= ", c == b);
+            muvelet(" (d== b)= ", d == b);
+
+            document.writeln("<br>");
+
+            muvelet(" (a=== b)= ", a === b);
+            muvelet(" (c=== b)= ", c === b);
+            muvelet(" (d=== b)= ", d === b);
+
+            document.writeln("<br>");
+
+            muvelet(" (c!== b)= ", c !== b);
+            muvelet(" (b== d)= ", b == d);
+        }
+
+        {
+            //ertekado
+
+            let a=10;
+            let b=33;
+            let c="teszt";
+
+            document.writeln("Alapadatok");
+            muvelet("a = ",a);
+            muvelet("b = ",b);
+            muvelet("c = ",c);
+
+            
+        
+            let r=a;
+            a=b;
+            muvelet("a=b >= a ",r >=a);
+
+            
+        }
+        
+
+        {
+            
+        }
+    </script>
+    <form action="" name="urlap" >
+        Sugar: <input type="number" value="0.0" id="sugar"><br>
+        Magassag: <input type="number" value="0.0" id="magassag"><br>
+       <input type="button" value="ok" onclick="henger(
+           document.urlap.sugar.value,
+           document.urlap.magassag.value
+       )">
+    </form>
+    <footer id="content"></footer>
+    <script>
+        
+    </script>
+    
+</body >
+
+</html>

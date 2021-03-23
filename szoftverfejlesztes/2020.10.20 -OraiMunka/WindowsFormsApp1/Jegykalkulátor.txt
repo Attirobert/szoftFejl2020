@@ -1,0 +1,19 @@
+﻿Írjon programot, ami különböző paraméterek alapján kiszámolja egy vonatjegy árát. 
+
+Utazási célok:
+Budapest 1500Ft, 
+Hatvan 1300Ft, 
+Székesfehérvár 2000Ft, 
+Kecskemét 2800Ft
+
+Kedvezmények:
+nappali tagozatos diák 50%, 
+nyugdíjas 50%, 
+törzsutas kártya 70%
+
+Szolgáltatások:
+kutya 800Ft, 
+bicikli 600Ft, 
+túlméretes poggyász 400Ft
+
+A beállítások után egy gombra kattintva írja ki a program a fizetendő árat, egy másik gomb pedig adjon lehetőséget a beállítások törlésére.
